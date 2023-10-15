@@ -5,19 +5,19 @@ module.exports = function (api) {
     plugins: [
       "transform-inline-environment-variables",
       [
-        "module-resolver",
-        {
-          alias: {
-            "@src": "./src",
-          },
-        },
-      ],
-      [
         "@tamagui/babel-plugin",
         {
           components: ["tamagui"],
           config: "./tamagui.config.ts",
           logTimings: true,
+        },
+      ],
+      [
+        "module-resolver",
+        {
+          alias: {
+            "@src": "./src",
+          },
         },
       ],
       "react-native-reanimated/plugin",

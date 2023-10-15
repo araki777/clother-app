@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Stack, Text } from "tamagui";
 
 export default function Home() {
   return (
-    <View>
+    <Stack>
       <Text>テキスト</Text>
-    </View>
+    </Stack>
   );
 }
